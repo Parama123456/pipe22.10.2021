@@ -13,7 +13,7 @@ pipeline(){
                              }
                              stages('create image'){
                              steps {
-                             sh "docker build -t nn_image .
+                             sh "docker build -t nn_image ."
                              }
                              }
 
