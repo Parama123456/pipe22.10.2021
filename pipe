@@ -1,0 +1,13 @@
+pipeline() {
+ agent any
+    stages{
+       stage ('docker image ls'){
+          step {
+
+          sh docker image ls
+}
+  }
+
+}
+
+}
