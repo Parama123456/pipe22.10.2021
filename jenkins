@@ -6,6 +6,11 @@ pipeline(){
               sh "docker image ls"
                }
                              }
+                             stage('docker container'){
+                             steps{
+                             sh "docker ps -a "
+                             }
+                             }
 
           }
 
