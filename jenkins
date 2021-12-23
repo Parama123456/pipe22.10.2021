@@ -2,8 +2,8 @@ pipeline(){
  agent any
     stages{
        stage ('docker image ls'){
-          step {
-              docker image ls
+          steps {
+              sh "docker image ls"
                }
                              }
 
