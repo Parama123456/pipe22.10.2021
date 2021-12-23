@@ -1,13 +1,17 @@
-pipeline() {
+pipeline(){
  agent any
     stages{
        stage ('docker image ls'){
-          step {
+          steps {
+              sh "docker image ls"
+               }
+                             }
+                             stage('docker container'){
+                             steps{
+                             sh "docker ps -a "
+                             }
+                             }
 
-          sh docker image ls
-}
-  }
-
-}
+          }
 
 }
