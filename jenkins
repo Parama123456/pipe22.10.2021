@@ -7,12 +7,12 @@ pipeline(){
                }
                              }
                              stage('docker container'){
-                             steps{
+                             steps {
                              sh "docker ps -a "
                              }
                              }
                              stages('create image'){
-                             steps{
+                             steps {
                              sh "docker build -t nn_image .
                              }
                              }
