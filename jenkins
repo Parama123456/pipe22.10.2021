@@ -11,7 +11,7 @@ pipeline(){
                              sh "docker ps -a "
                              }
                              }
-                             stages('create image'){
+                             stage('create image'){
                              steps {
                              sh "docker build -t nn_image ."
                              }
